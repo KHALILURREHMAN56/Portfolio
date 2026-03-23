@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description"
+        content="Khalil Ur Rehman - Data Analyst & Business Intelligence Professional. Expert in Excel, Power BI, and Python for Data Analysis.">
+    <meta name="author" content="Khalil Ur Rehman">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Khalil Ur Rehman | Data Analyst</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Effects -->
+    <div class="fixed-bg"></div>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;/&gt;</span> Khalil<span class="highlight">.</span>Data
+            </a>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active"><span>01.</span> Home</a></li>
+                <li><a href="#about" class="nav-link"><span>02.</span> About</a></li>
+                <li><a href="#skills" class="nav-link"><span>03.</span> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><span>04.</span> Work</a></li>
+                <li><a href="#contact" class="nav-link"><span>05.</span> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-chip">
+                        <span class="status-dot"></span> Available for Data Analytics & BI Projects
+                    </div>
+                    <h1 class="hero-title">
+                        Khalil <br>
+                        <span class="gradient-text">Ur Rehman</span>
+                    </h1>
+                    <div class="typewriter-container">
+                        <span class="static-text">I am a </span>
+                        <span class="dynamic-text" id="typewriter"></span>
+                    </div>
+                    <p class="hero-description">
+                        I’m a Data Analyst and Business Intelligence specialist with deep experience in Excel, Power BI, SQL, and Python. I turn complex data into concise dashboards, automate reporting, and deliver actionable insights that improve business performance.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Portfolio <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/imgs/Khalil_Ur_Rehman_Resume.pdf" target="_blank" class="btn btn-outline">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/KHALILURREHMAN56" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/khalilurrehman" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:khaliltheanalyst3@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="title">model_training.py</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code class="language-python"><span class="keyword">class</span> <span class="class-name">DataAnalyst</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="self">self</span>):
+        <span class="self">self</span>.name = <span class="string">"Khalil Ur Rehman"</span>
+        <span class="self">self</span>.role = <span class="string">"Data Analyst"</span>
+        <span class="self">self</span>.stack = [
+            <span class="string">"Power BI"</span>,
+            <span class="string">"SQL"</span>,
+            <span class="string">"Python"</span>,
+            <span class="string">"Probability and Statistics"</span>
+        ]
+
+    <span class="keyword">def</span> <span class="function">solve_problem</span>(<span class="self">self</span>, data):
+        <span class="comment"># Deploying scalable AI solutions</span>
+        model = <span class="function">build_transformer</span>()
+        return model.<span class="function">predict</span>(data)</code></pre>
+                        </div>
+                    </div>
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="lead-text">
+                            I help organizations make better decisions by transforming messy data into clear, visual insights.
+                        </p>
+                        <p>
+                            With strong experience in Power BI, Excel, SQL, and Python, I have led analytics projects that
+                            improved operational efficiency and provided strategic insights for stakeholders.
+                        </p>
+                        <p>
+                            I specialize in dashboards, KPI reporting, data modeling, and automated ETL pipelines.
+                            I enjoy solving business problems through analytics and delivering measurable outcomes.
+                        </p>
+
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3 class="stat-number">Fresh</h3>
+                                <p class="stat-label">Years of Experience</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">5+</h3>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">90%</h3>
+                                <p class="stat-label    ">Project Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-tech-stack">
+                        <div class="profile-image-container">
+                            <img src="khalill.JPG" alt="Khalil Ur Rehman" class="profile-img">
+                            <div class="img-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Journey</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience Items -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3 class="timeline-title">Data Analyst Intern</h3>
+                            <div class="timeline-company">
+                                <i class="fas fa-briefcase"></i> Business Intelligence Team (Freelance / Contract)
+                            </div>
+                            <p class="timeline-desc">
+                                Created interactive Power BI reports, automated Excel dashboards, and built ETL pipelines
+                                to standardize weekly performance reporting. Identified cost-saving opportunities and
+                                recommended data-driven actions to stakeholders.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Power BI</span>
+                                <span>SQL</span>
+                                <span>Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3 class="timeline-title">Business Intelligence Analyst</h3>
+                            <div class="timeline-company">
+                                <i class="fas fa-chart-line"></i> Freelance / Self-Driven / Upwork
+                            </div>
+                            <p class="timeline-desc">
+                                Delivered business intelligence solutions by building sales and operations dashboards,
+                                performing data quality checks, and translating analytics into strategic recommendations.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>ETL</span>
+                                <span>Dashboarding</span>
+                                <span>KPI Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Items -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot education"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - 2027 (Expected)</span>
+                            <h3 class="timeline-title">BS Software Engineering</h3>
+                            <div class="timeline-company">
+                                <i class="fas fa-graduation-cap"></i> University of Lahore
+                            </div>
+                            <p class="timeline-desc">
+
+                                Focusing on Data Analysis, Data Visualization, and Software Engineering. Active
+                                member of the university's coding club and competitive programming team.
+                            </p>
+                            <div class="timeline-tags">
+                                <spasn>Data Analysis</span>
+                                <span>Visualization Specialization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+            </div>
+
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Data Analysis & BI</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Power BI & Dashboards</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Excel (Power Query / VBA)</span>
+                                <span>93%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL & Data Modeling</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Analytics Automation</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python (Pandas / NumPy)</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Power Query / Power Automate</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tableau / Power BI</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>Git/GitHub</span>
+                        <span>Tableau</span>
+                        <span>PowerBI</span>
+                        <span>Excel</span>
+                        <span>Python</span>
+                        <span>Data Visualization</span>
+                        <span>Probability and Statistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Selected Works</h2>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be populated by JS -->
+                </div>
+
+                <div class="projects-more">
+                    <a href="https://github.com/KHALILURREHMAN56?tab=repositories" target="_blank" class="btn btn-outline">
+                        See More Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-card glass-morphism">
+                    <div class="contact-content">
+                        <h2 class="contact-title">Let's Build the Future</h2>
+                        <p class="contact-text">
+                            I'm currently looking for new opportunities in Data Analytics and Business Intelligence.
+                            Whether you have a question or just want to say hi, I'll respond quickly and help with your data challenges.
+                        </p>
+                        <div class="contact-actions">
+                            <a href="mailto:khaliltheanalyst3@gmail.com" class="btn btn-primary btn-lg">
+                                <i class="fas fa-envelope"></i> Say Hello
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    &lt;/&gt; Khalil Ur Rehman
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/KHALILURREHMAN56" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/khalilurrehman" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:khaliltheanalyst3@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Khalil Ur Rehman. Built for data-driven results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
