@@ -172,3 +172,80 @@ document.addEventListener("DOMContentLoaded", () => {
     typeWriter();
     renderProjects();
 });
+
+// Contact form setup
+function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function showContactStatus(message, isError) {
+    const status = document.getElementById('contact-status');
+    if (!status) return;
+    status.style.display = 'block';
+    status.style.color = isError ? '#ff6b6b' : '#8bd18b';
+    status.textContent = message;
+}
+
+function setupContactForm() {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    // Initialize EmailJS if available (replace with your user ID)
+    try {
+        if (window.emailjs && typeof window.emailjs.init === 'function') {
+            // NOTE: replace 'YOUR_EMAILJS_USER_ID' with your EmailJS user ID
+            emailjs.init('YOUR_EMAILJS_USER_ID');
+        }
+    } catch (err) {
+        // ignore init errors; we'll handle send errors below
+        console.warn('EmailJS init error', err);
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('contact-name')?.value.trim();
+        const email = document.getElementById('contact-email')?.value.trim();
+        const message = document.getElementById('contact-message')?.value.trim();
+
+        if (!name || !email || !message) {
+            showContactStatus('Please fill out all fields.', true);
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            showContactStatus('Please enter a valid email address.', true);
+            return;
+        }
+
+        // Prepare params for EmailJS
+        const templateParams = {
+            from_name: name,
+            reply_to: email,
+            message: message
+        };
+
+        // Replace the following placeholders with your EmailJS service/template IDs
+        const SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID';
+        const TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
+
+        if (window.emailjs && typeof emailjs.send === 'function') {
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
+                .then(function (response) {
+                    showContactStatus('Message sent successfully. Thank you!', false);
+                    form.reset();
+                }, function (error) {
+                    console.error('EmailJS send error:', error);
+                    showContactStatus('Could not send message. Please try again later.', true);
+                });
+        } else {
+            // EmailJS not loaded — fallback: instruct user to use mailto link
+            showContactStatus('Mail service unavailable. Use the "Open Mail App" button.', true);
+        }
+    });
+}
+
+// Setup contact form after DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    setupContactForm();
+});
