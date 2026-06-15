@@ -374,11 +374,26 @@
                             I'm currently looking for new opportunities in Data Analytics and Business Intelligence.
                             Whether you have a question or just want to say hi, I'll respond quickly and help with your data challenges.
                         </p>
-                        <div class="contact-actions">
-                            <a href="mailto:khaliltheanalyst3@gmail.com" class="btn btn-primary btn-lg">
-                                <i class="fas fa-envelope"></i> Say Hello
-                            </a>
-                        </div>
+                        <form id="contact-form" class="contact-actions" novalidate>
+                            <div class="form-row">
+                                <input type="text" id="contact-name" name="from_name" placeholder="Your name" required aria-label="Your name" />
+                            </div>
+                            <div class="form-row">
+                                <input type="email" id="contact-email" name="reply_to" placeholder="Your email" required aria-label="Your email" />
+                            </div>
+                            <div class="form-row">
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Your message" required aria-label="Your message"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-primary btn-lg" id="contact-submit">
+                                    <i class="fas fa-envelope"></i> Send Message
+                                </button>
+                                <a href="mailto:khaliltheanalyst3@gmail.com" class="btn btn-outline" id="contact-mailto" style="margin-left:8px">
+                                    <i class="fas fa-paper-plane"></i> Open Mail App
+                                </a>
+                            </div>
+                            <p id="contact-status" class="contact-status" style="display:none;margin-top:12px"></p>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -404,6 +419,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
