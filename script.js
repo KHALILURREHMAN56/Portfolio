@@ -1,5 +1,35 @@
 // Data for Projects
 const projects = [
+     {
+        title: "Hospital Readmission Analysis",
+        description: "Excel-based healthcare data analysis identifying factors influencing hospital readmissions using pivot tables, charts, KPIs, and an interactive dashboard.",
+        tech: ["Excel", "Pivot Tables", "Power Query", "Dashboard", "KPI"],
+        links: {
+            github: "https://github.com/KHALILURREHMAN56/Hospital-readmission-analysis",
+            demo: "#"
+        },
+        icon: "fa-notes-medical"
+    },
+        {
+        title: "PakTrend Store Analysis",
+        description: "End-to-end sales analytics project built in Excel, showcasing data cleaning, dashboard development, KPI tracking, and actionable business insights for PakTrend Store.",
+        tech: ["Excel", "Power Query", "Pivot Tables", "Dashboard", "KPI"],
+        links: {
+            github: "https://github.com/KHALILURREHMAN56/PakTrend-Store-Analysis",
+            demo: "#"
+        },
+        icon: "fa-shopping-cart"
+    },
+      {
+        title: "Excel Visualization Project",
+        description: "Built advanced Excel dashboards with dynamic charts and VBA automation for business reporting.",
+        tech: ["Excel", "Power Query", "VBA"],
+        links: {
+            github: "https://github.com/KHALILURREHMAN56/Excel-visualization-Project",
+            demo: "#"
+        },
+        icon: "fa-file-excel"
+    },
     {
         title: "Ecommerce Sales Dashboard",
         description: "Interactive Power BI dashboard visualizing sales trends, customer segments, and KPI tracking for an ecommerce business.",
@@ -19,17 +49,9 @@ const projects = [
             demo: "#"
         },
         icon: "fa-database"
-    },
-    {
-        title: "Excel Visualization Project",
-        description: "Built advanced Excel dashboards with dynamic charts and VBA automation for business reporting.",
-        tech: ["Excel", "Power Query", "VBA"],
-        links: {
-            github: "https://github.com/KHALILURREHMAN56/Excel-visualization-Project",
-            demo: "#"
-        },
-        icon: "fa-file-excel"
     }
+    
+   
 ];
 
 // Typewriter Effect
